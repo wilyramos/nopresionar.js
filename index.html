@@ -3,27 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hOLI</title>
+  <title>Crear PDF con Imagen desde Public</title>
 </head>
 <body>
-  <button id="crear-pdf">No presionar XD</button>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-  <script>
-    document.getElementById("crear-pdf").addEventListener("click", function() {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
+  <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">No presionar</button>
 
-      // Agregar texto al PDF
-      doc.text("Haz clic en el enlace para ser redirigido", 20, 20);
+  <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">No presionar tampoco xd</button>
 
-      // Usar el método 'link' para agregar un enlace dentro del PDF
-      doc.link(20, 20, 180, 10, { url: "https://www.ejemplo.com" });
 
-      // Guardar el archivo PDF generado
-      doc.save("redirect_to_website.pdf");
-    });
-  </script>
+
 </body>
 </html>
